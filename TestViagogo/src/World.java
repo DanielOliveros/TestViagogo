@@ -65,14 +65,7 @@ public class World {
 	public void printEvents(List<Event> eventList){
 		for(int i=0;i<eventList.size();i++){
 			Event e = eventList.get(i);
-			System.out.print("Event "+e.getId()+" - Location: "+e.getLocation().getX()+","+e.getLocation().getY()+". Tickets prices: ");
-			printTicketPrices(e.getTicketsList());
-			System.out.println("");
-		}
-	}
-	public void printTicketPrices(List<Ticket> tickets){
-		for(int i=0; i<tickets.size(); i++){
-			System.out.print(tickets.get(i).getPrice() +"€ - ");
+			System.out.println("Event "+e.getId()+" - Location: "+e.getLocation().getX()+","+e.getLocation().getY()+". Cheapest ticket: $"+e.getTicketsList().get(0).getPrice());
 		}
 	}
 	public void generateEvents(){

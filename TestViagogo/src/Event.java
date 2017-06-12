@@ -14,6 +14,25 @@ public class Event {
 		for(int i=0; i<5; i++){
 			this.ticketsList.add(new Ticket(i, roundTwoDecimals((Math.random() * 50) + 50)));
 		}
+		orderTicketsByPrice();
+	}
+	
+	public void orderTicketsByPrice(){
+		Ticket[] ticketsArray = this.ticketsList.toArray(new Ticket[this.ticketsList.size()]);
+		for(int i=0;i<(ticketsArray.length-1);i++){
+            for(int j=i+1;j<ticketsArray.length;j++){
+                if(ticketsArray[i].getPrice()>ticketsArray[j].getPrice()){
+                    Ticket auxTicket=ticketsArray[i];
+                    ticketsArray[i]=ticketsArray[j];
+                    ticketsArray[j]=auxTicket;
+                }
+            }
+        }
+		List<Ticket> orderedTicketsList = new ArrayList<Ticket>();
+		for(int i=0; i<this.ticketsList.size(); i++){
+			orderedTicketsList.add(ticketsArray[i]);
+		}
+		this.setTicketsList(orderedTicketsList);
 	}
 	
 	public double roundTwoDecimals(double d) {
