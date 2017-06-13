@@ -39,24 +39,42 @@ Example of execution:
 
 
 Random data generated: 
+
 Event 0 - Location: -1,-4. Cheapest ticket: $53.75
+
 Event 1 - Location: 4,10. Cheapest ticket: $50.32
+
 Event 2 - Location: -8,-9. Cheapest ticket: $56.92
+
 Event 3 - Location: 7,0. Cheapest ticket: $58.73
+
 Event 4 - Location: -8,10. Cheapest ticket: $60.79
+
 Event 5 - Location: 3,6. Cheapest ticket: $58.11
+
 Event 6 - Location: -7,-9. Cheapest ticket: $67.66
+
 Event 7 - Location: 4,6. Cheapest ticket: $55.96
+
 Event 8 - Location: 8,5. Cheapest ticket: $63.89
+
 Event 9 - Location: 5,1. Cheapest ticket: $55.16
+
 Please introduce your location: 
+
 Coordenate x:
 1
 Coordenate y:
 2
+
 The five closer events to your location are:
+
 Event 9 - Location: 5,1. Cheapest ticket: $55.16
+
 Event 5 - Location: 3,6. Cheapest ticket: $58.11
+
 Event 7 - Location: 4,6. Cheapest ticket: $55.96
+
 Event 3 - Location: 7,0. Cheapest ticket: $58.73
+
 Event 0 - Location: -1,-4. Cheapest ticket: $53.75
