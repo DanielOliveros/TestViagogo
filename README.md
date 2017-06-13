@@ -11,10 +11,14 @@ Scenario:
 
 The program has been developed using Java with the IDE Eclipse. Thus, to execute the project a good option would be import the project
 with Eclipse and run it there. 
-The Object Oriented paradigm was follwed and three classes were defined:
+The Object Oriented paradigm was follwed and four classes were defined:
+
 -World
+
 -Event
+
 -Ticekt
+
 -Location
 
 Assumptions:
